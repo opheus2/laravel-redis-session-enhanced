@@ -267,7 +267,7 @@ class RedisSessionEnhancerHandler
                     'last_activity' => $parsed_data['last_activity'],
                     'payload' => $parsed_data['payload'],
                 ];
-            } catch (\Exception $e) {
+            } catch (\Throwable $e) {
                 // ignore the errors
                 continue;
             }
